@@ -98,10 +98,6 @@ def parse(o):
                 pass
         else:
             pass
-        users_db.update_one({"connections.line.user_id": _user_id}, {
-            "$push": {"connections.line.history.events": event()},
-        })
-
 
 def reply(user_id, msg_texts):
     data = users_db.find_one({"connections.line.user_id": user_id})["connections"]["line"]
@@ -114,13 +110,6 @@ def reply(user_id, msg_texts):
             'content-type': 'application/json',
             'authorization': f'Bearer {settings.line.access_token()}'
         })
-        if res.status_code == 200:
-            users_db.update_one({"connections.line.user_id": user_id}, {
-                '$push': {'connections.line.history.reply': {
-                    'time': time.time(),
-                    'messages': msg_texts
-                }}
-            })
         return res.status_code
     else:
         raise RuntimeError
@@ -141,15 +130,6 @@ def push(user_id, msg_texts):
             'content-type': 'application/json',
             'authorization': f'Bearer {settings.line.access_token()}'
         })
-        if res.status_code == 200:
-            users_db.update_one({"connections.line.user_id": user_id}, {
-                '$push': {
-                    'connections.line.history.push': {
-                        'time': time.time(),
-                        'messages': msg_texts
-                    }
-                }
-            })
         return res.status_code
     else:
         raise RuntimeError
@@ -175,17 +155,6 @@ def multicast(user_ids, msg_texts):
         'content-type': 'application/json',
         'authorization': f'Bearer {settings.line.access_token()}'
     })
-    now = time.time()
-    if res.status_code == 200:
-        for user_id in user_ids:
-            users_db.update_one({"connections.line.user_id": user_id}, {
-                '$push': {
-                    'connections.line.history.multicast': {
-                        'time': now,
-                        'messages': msg_texts
-                    }
-                }
-            })
     return res.status_code
 
 

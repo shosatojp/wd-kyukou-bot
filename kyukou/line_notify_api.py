@@ -78,10 +78,4 @@ def send(realid, message):
     res = requests.post('https://notify-api.line.me/api/notify', headers={
         'Authorization': f'Bearer {get_access_token(realid)}'
     }, params={"message":  message})
-    users_db.update_one({'_id': ObjectId(realid)}, {
-        '$push': {'connections.line_notify.history': {
-            'message': '\n'+message,
-            'time': time.time()
-        }}
-    })
     return res.status_code == 200
