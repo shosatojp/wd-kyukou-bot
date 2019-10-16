@@ -48,6 +48,9 @@ ab:
 log: FORCE
 	tail -f $(APP_LOG)
 
+archive: FORCE
+	mongodump --archive=archive/kyukou.`date +%Y-%m-%d-%H-%M-%S-%s`.mongo.archive --port $(MONGOD_PORT)
+
 FORCE:;
 
 # find  web/public/ -type d -exec chmod go+x {} \;
