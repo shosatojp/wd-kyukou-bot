@@ -1,3 +1,4 @@
+from functools import reduce
 import time
 import random
 from pprint import pprint
@@ -22,12 +23,13 @@ def process(p, n):
 
 
 class Procedure():
-    def __init__(self, oncondition, procedure_id):
+    def __init__(self, oncondition, procedure_id, **kwargs):
         self.collection = {}
         self.processes = []
         self.oncondition = oncondition
         self.procedure_id = procedure_id
         self.info = {}
+        self.kwargs = kwargs or {}
 
     def set_progress(self, _id, progress):
         self.collection[_id] = progress
@@ -43,17 +45,17 @@ class Procedure():
     def get_info(self, _id):
         return self.info.get(_id) or {}
 
-    def run(self, _id, *args):
+    def run(self, _id, *args, **kwargs):
         if self.get_progress(_id)+1 >= len(self.processes):
             raise RuntimeError
         else:
-            r = self.processes[self.get_progress(_id)+1]["func"](_id, *args)
+            r = self.processes[self.get_progress(_id)+1]["func"](_id, *args, **kwargs)
             if self.get_progress(_id) == len(self.processes)-1:
                 self.remove(_id)
             return r
 
-    def check(self, _id, *args):
-        if self.oncondition(_id, *args):
+    def check(self, _id, *args, **kwargs):
+        if self.oncondition(_id, *args, **kwargs):
             return True
         else:
             return len(self.processes) > self.get_progress(_id) > -1
@@ -74,14 +76,14 @@ class ProcedureSelector():
             self.procedures[procedure.procedure_id] = procedure
         self.current = {}
 
-    def run(self, _id, *args):
+    def run(self, _id, *args, **kwargs):
         procedure_id = self.current.get(_id)
         if procedure_id and self.procedures[procedure_id].get_progress(_id) != -1:
-            self.procedures[procedure_id].run(_id, *args)
+            self.procedures[procedure_id].run(_id, *args, **kwargs)
             return True
         for k, procedure in self.procedures.items():
-            if procedure.check(_id, *args):
-                procedure.run(_id, *args)
+            if procedure.check(_id, *args, **kwargs):
+                procedure.run(_id, *args, **kwargs)
                 self.current[_id] = k
                 return True
         return None
@@ -100,12 +102,13 @@ class ProcedureSelector():
 if isinpackage:
 
     class ProcedureDB(Procedure):
-        def __init__(self, oncondition, procedure_id, timeout=3600):
+        def __init__(self, oncondition, procedure_id, timeout=3600, **kwargs):
             self.collection = get_collection('procedure')
             self.processes = []
             self.oncondition = oncondition
             self.procedure_id = procedure_id
             self.timeout = timeout
+            self.kwargs = kwargs or {}
             add_task(60, self.clear)
 
         def set_progress(self, _id, progress):
@@ -153,14 +156,14 @@ if isinpackage:
                 self.procedures[procedure.procedure_id] = procedure
             self.current = get_collection('current_procedure')
 
-        def run(self, _id, *args):
+        def run(self, _id, *args, **kwargs):
             procedure_id = Just(self.current.find_one({'id': _id})).procedure()
             if procedure_id and self.procedures[procedure_id].get_progress(_id) != -1:
-                self.procedures[procedure_id].run(_id, *args)
+                self.procedures[procedure_id].run(_id, *args, **kwargs)
                 return True
             for k, procedure in self.procedures.items():
-                if procedure.check(_id, *args):
-                    procedure.run(_id, *args)
+                if procedure.check(_id, *args, **kwargs):
+                    procedure.run(_id, *args, **kwargs)
                     self.current.update({'id': _id}, {'procedure': k, 'id': _id, 'expired_at': time.time()+3600}, True)
                     return True
             return None
@@ -175,6 +178,9 @@ if isinpackage:
             for procedure in self.procedures.values():
                 if hasattr(procedure, 'clear'):
                     procedure.clear()
+
+        def get_description(self):
+            return reduce(lambda i, p: i + f"【{p.kwargs.get('title','')}】: {p.kwargs.get('description','')}\n", self.procedures.values(), '')
 
 
 if not isinpackage:
