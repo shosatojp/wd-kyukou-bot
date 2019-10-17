@@ -11,7 +11,7 @@ if isinpackage:
     from .settings import settings
     from .db import get_collection
 else:
-    import certificate
+    # import certificate
     from settings import settings
     from db import get_collection
 
@@ -76,3 +76,8 @@ def make_message(to_addr, subject, content):
     msg["To"] = to_addr
     msg["From"] = settings["email"]["from_addr"]
     return msg
+
+
+if not isinpackage:
+    msg = make_message('kyukou@monoid.app', 'title', 'content')
+    send_mails([msg])

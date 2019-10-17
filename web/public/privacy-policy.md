@@ -86,6 +86,6 @@ UEC World Dominators（以下，「当社」といいます。）は，本ウェ
 
 本ポリシーに関するお問い合わせは，下記の窓口までお願いいたします。
 
-Eメールアドレス： kyukou\[at\]shosato.jp
+Eメールアドレス： kyukou\[at\]monoid.app
 
 以上

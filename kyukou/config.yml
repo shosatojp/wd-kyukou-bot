@@ -1,4 +1,4 @@
-url_prefix: https://kyukou.shosato.jp
+url_prefix: https://kyukou.monoid.app
 mongo_url: 'mongodb://localhost:8070/'
 #mongod:
 #  username: kyukou
@@ -29,7 +29,7 @@ email:
   __ENV__password: KYUKOU_LINE_CHANNEL_SECRET
   smtp_server: yellowcoyote4.sakura.ne.jp
   smtp_port: 587
-  from_addr: kyukou@shosato.jp
+  from_addr: kyukou@monoid.app
   
 google:
   __ENV__google_client_secret: KYUKOU_GOOGLE_CLIENT_SECRET
@@ -42,7 +42,7 @@ google:
 public_dir: ./web/public
 index: index.html
 
-admin_email_addr: kyukou@shosato.jp
+admin_email_addr: kyukou@monoid.app
 
 default_notify:
   type: day

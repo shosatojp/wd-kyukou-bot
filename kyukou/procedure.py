@@ -210,7 +210,6 @@ if not isinpackage:
     ps.run('hige', *args)
     args = ['mail']
     ps.run('hige', *args)
-    args = ['me@shosato.jp']
     ps.run('hoge', *args)
 else:
     __all__ = ["Procedure", "ProcedureDB", "process", "ProcedureSelector", "ProcedureSelectorDB"]

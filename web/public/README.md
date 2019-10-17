@@ -36,4 +36,4 @@ Googleで認証することで、Googleカレンダーに休講情報のイベ�
 ## お問い合わせ
 不明な手順や機能の追加・改善に関するお問い合わせも歓迎いたします。各ボットで`request`と送信するか、こちらのメールアドレスにお送りください。
 
-[kyukou@shosato.jp](mailto://kyukou@shosato.jp)
+[kyukou@monoid.app](mailto://kyukou@monoid.app)
