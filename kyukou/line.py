@@ -195,7 +195,7 @@ def get_request(user_id, msg_text, *args, **kwargs):
 @process(request_procedure, 1)
 def send_request(user_id, msg_text, *args, **kwargs):
     realid = line_api.get_real_user_id(user_id)
-    log(__name__,f'REAL_USER_ID={line_api.get_real_user_id(user_id)}, REF=TWITTER\n{msg_text}',6)
+    log(__name__,f'REAL_USER_ID={line_api.get_real_user_id(user_id)}, REF=LINE\n{msg_text}',6)
     # msg = email_api.make_message(settings.admin_email_addr(), '【ご注文は休講情報ですか？】ユーザーからの問い合わせ', f'<h1>REAL_USER_ID={realid}, REF=LINE</h1><p>{msg_text}</p><p></p>')
     # scheduler.pool.submit(email_api.send_mails, [msg])
     line_api.reply(user_id, ['ご協力ありがとうございました。'])
