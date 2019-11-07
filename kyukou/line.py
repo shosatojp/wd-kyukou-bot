@@ -253,6 +253,10 @@ def copipe2(user_id, msg_text, *args, **kwargs):
         data = copipe_procedure.get_info(user_id).get('copipe_data', [])
         parse_share.register(realid, data)
         line_api.reply(user_id, [f'{len(data)}件の講義データを登録しました'])
+        line_api.push(user_id, [
+            '休講情報を配信するためにLINE Notifyの連携をお願いします。これが最後のステップです',
+            line_notify_api.get_redirect_link(realid)
+        ])
         copipe_procedure.set_progress(user_id, 2)
     else:
         line_api.reply(user_id, ['もう一度コピペしてください'])
