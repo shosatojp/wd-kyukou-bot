@@ -16,11 +16,14 @@ from . import twitter_api
 from . import util
 from .settings import settings
 from .log import log
+import os
+import sys
+from .log import log
 # 上から順に優先
 
 LINE_API_NETWORKS = ['0.0.0.0/0']
 TWITTER_API_NETWORKS = ['0.0.0.0/0','199.59.148.0/22', '199.16.156.0/22']
-LOCAL_NETWORKS = ['192.168.0.0/16', '124.147.77.47/32']
+LOCAL_NETWORKS = ['192.168.0.0/16']
 
 # LINE botからイベントがあったときに来る
 @route('post', '/api/v1/line/webhook', networks=LINE_API_NETWORKS)
@@ -57,12 +60,13 @@ def line_notify(environ):
     return redirect('/#/expired')
 
 # Twitter Get Redirect URL to Allow Connection
-@route('get', '/api/v1/twitter/redirect_url', networks=LOCAL_NETWORKS)
-def line_notify(environ):
+@route('get', '/api/v1/twitter/redirect_url')
+def twitter_redirect_url(environ):
     q = get_query(environ)
     if q.get('consumer_key_secret') == settings.twitter.consumer_key_secret()\
             and q.get('consumer_key') == settings.twitter.consumer_key():
-        return redirect(twitter_api.get_redirect_url())
+        url = twitter_api.get_redirect_url()
+        return redirect(url)
     else:
         return status(400)
 

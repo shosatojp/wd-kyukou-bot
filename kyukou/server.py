@@ -50,12 +50,11 @@ class ThreadingWsgiServer(ThreadingMixIn, WSGIServer):
 def run_server():
     port = settings["port"]
     try:
-        pass
-        # subprocess.check_call(['bash', '-c', f'kill -9 `lsof -t -i:{port}`'], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+        subprocess.check_call(['bash', '-c', f'kill -9 `lsof -t -i:{port}`'], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
     except:
         pass
     finally:
         time.sleep(1)
-    with make_server('0.0.0.0', port, app, WSGIServer, handler_class=NoLoggingWSGIRequestHandler) as httpd:
+    with make_server('localhost', port, app, WSGIServer, handler_class=NoLoggingWSGIRequestHandler) as httpd:
         log(__name__, f'Listen on port: {port}')
         httpd.serve_forever()

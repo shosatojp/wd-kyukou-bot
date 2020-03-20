@@ -2,6 +2,7 @@
 import glob
 from bs4 import BeautifulSoup
 import re
+import os
 isinpackage = not __name__ in ['syllabus', '__main__']
 if isinpackage:
     from .db import get_collection
@@ -26,14 +27,14 @@ def parse_when(src):
 
 def scrape_syllabus(html):
     doc = BeautifulSoup(html, 'html.parser')
-    table = doc.select('table')[8]
-    url_src_re = re.compile(r"refer\('(\d+)','(\d+)','(\d+)'\);")
+    table = doc.select('tbody')[8]
+    # url_src_re = re.compile(r"refer\('(\d+)','(\d+)','(\d+)'\);")
     result = []
-    for tr in table.select('tr')[1:]:
+    for tr in table.select('tr'):
         tds = tr.select('td')
         # URL
-        url_src = tds[7].select_one('input').get('onclick').strip()
-        m = url_src_re.match(url_src)
+        url_src = tds[5].select_one('a').get('href').strip()
+        # m = url_src_re.match(url_src)
 
         result.append({
             "semester": tds[1].text.strip(),
@@ -42,17 +43,18 @@ def scrape_syllabus(html):
             "class_num": tds[4].text.strip(),
             "subject": tds[5].text.strip(),
             "teachers": tds[6].text.strip(),
-            "url": f"http://kyoumu.office.uec.ac.jp/syllabus/{m[1]}/{m[2]}/{m[2]}_{m[3]}.html",
+            "url": f"http://kyoumu.office.uec.ac.jp/syllabus/2019/${url_src}",
         })
     return result
 
 
-def syllabus_all(_dir='syllabus'):
+def syllabus_all(_dir=os.path.join(os.path.dirname(os.path.dirname(__file__)),'syllabus')):
     syllabus = get_collection('syllabus')
     for path in glob.glob(f'{_dir}/*'):
         with open(path, 'rt', encoding='utf-8') as f:
             for e in scrape_syllabus(f.read()):
                 if not syllabus.find_one({'class_num': e.get('class_num')}):
+                    print(e)
                     syllabus.insert_one(e)
 
 

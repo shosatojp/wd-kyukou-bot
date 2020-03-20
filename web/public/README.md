@@ -3,18 +3,16 @@
 ## 電気通信大学の「個別配信型」休講情報Botです
 個人の履修科目に合わせて休講情報をお届けします。
 
-## 1. LINEBotかTwitterBotが使えます！
+## 1. LINEBotで配信します！
+<!-- ## 1. LINEBotかTwitterBotが使えます！ -->
 
 <div class="sns-buttons">
     <a class="sns-button line" href="https://line.me/R/ti/p/%40683vbgwr" target="_blank">
         <i class="fab fa-line"></i><span>LINE@</span>
     </a>
-    <a class="sns-button twitter" href="https://twitter.com/ueckyukou" target="_blank">
-        <i class="fab fa-twitter"></i><span>Follow</span>
-    </a>
 </div>
 
-!> Twitterはダイレクトメッセージで配信を行います
+<!-- !> Twitterはダイレクトメッセージで配信を行います -->
 
 !> LINEはLINE Notifyで配信を行います
 
@@ -34,10 +32,19 @@
 `help`と送るとコマンドの一覧を見れます。
 
 ## 詳細な設定が必要な場合
-[LINEボット詳細設定](/line-functions)または[Twitterボット詳細設定](/twitter-functions)に詳細な設定方法があります
+[LINEボット詳細設定](/line-functions)に詳細な設定方法があります
+<!-- [LINEボット詳細設定](/line-functions)または[Twitterボット詳細設定](/twitter-functions)に詳細な設定方法があります -->
 
-## Googleカレンダー連携(開発中)
-Googleで認証することで、Googleカレンダーに休講情報のイベントを追加することもできます。時間割をGoogleカレンダーに連続する予定として登録する機能も考えています。
+<!-- ## Googleカレンダー連携(開発中)
+Googleで認証することで、Googleカレンダーに休講情報のイベントを追加することもできます。時間割をGoogleカレンダーに連続する予定として登録する機能も考えています。 -->
+
+# 全体の休講情報のTweetもしています
+
+<div class="sns-buttons">
+    <a class="sns-button twitter" href="https://twitter.com/ueckyukou" target="_blank">
+        <i class="fab fa-twitter"></i><span>Follow</span>
+    </a>
+</div>
 
 ## お問い合わせ
 不明な手順や機能の追加・改善に関するお問い合わせも歓迎いたします。各ボットで`request`と送信するか、こちらのメールアドレスにお送りください。

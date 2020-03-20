@@ -29,4 +29,7 @@ if 1:
     scheduler.add_task(300, certificate.delete_expired)
     scheduler.add_task(300, procedure.ProcedureSelectorDB.clear_all)
 
+    from . import syllabus
+    syllabus.syllabus_all()
+
 __all__=['run_server', 'Router', 'log']

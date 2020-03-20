@@ -1,7 +1,7 @@
 import os
 
 config = {
-    "url_prefix": "https://kyukou.monoid.app",
+    "url_prefix": os.environ.get("KYUKOU_HOST", "https://kyukou.monoid.app"),
     "mongo_url": os.environ.get("KYUKOU_MONGO_URI", "mongodb://localhost:27017/"),
     "port": 5426,
     "line": {

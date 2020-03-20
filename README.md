@@ -91,3 +91,9 @@ cd wd-kyukou-bot/kyukou
 python3 syllabus.py
 exit
 ```
+
+1. Twitterのトークンを取得する
+
+```
+https://kyukou.monoid.app/api/v1/twitter/redirect_url?consumer_key_secret=&consumer_key=
+```
