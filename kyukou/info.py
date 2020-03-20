@@ -1,4 +1,5 @@
 from datetime import datetime
+import os
 isinpackage = not __name__ in ['info', '__main__']
 if isinpackage:
     from .db import get_collection
@@ -30,7 +31,8 @@ def create_md():
             lecture.get("teachers"),
             lecture.get("remark", "なし") or "-"
         ])+'|\n'
-    with open('web/public/lectures.md', 'wt', encoding='utf-8') as f:
+
+    with open(os.path.join(os.path.dirname(os.path.dirname(__file__)), 'web/public/lectures.md'), 'wt', encoding='utf-8') as f:
         f.write(md)
 
 

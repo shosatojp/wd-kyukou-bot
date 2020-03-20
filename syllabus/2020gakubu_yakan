@@ -1,0 +1,295 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!-- saved from url=(0067)http://kyoumu.office.uec.ac.jp/syllabus/2019/GakkiIchiran_22_0.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <link rel="SHORTCUT ICON" href="http://kyoumu.office.uec.ac.jp/syllabus/2019/favicon.ico">
+  
+  <meta http-equiv="Cache-Control" content="no-cache">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="Thu, 01 Dec 1994 16:00:00 GMT">
+
+<title>電気通信大学　シラバスWeb公開システム</title>
+
+  <link rel="stylesheet" href="./2020gakubu_yakan_files/StyleSheet.css" type="text/css">
+  <script type="text/javascript" src="./2020gakubu_yakan_files/ScriptColor.js.ダウンロード"></script>
+  <script type="text/javascript">
+     function TRMouseOut(obj){}
+     function TRMouseOver(obj){}
+  </script>
+
+  <script language="JavaScript">
+  <!--
+    function OpenInfo(url){
+     var winname = "SyllabusInfoWindow";
+     var params = "left=0,top=0,width=800,height=800,toolbar=0,location=0,status=0,menubar=1,scrollbars=1,resizable=1";
+     var newwin = window.open(url, winname, params);
+     newwin.focus();
+     return false;
+    }
+        function changeGakki() {
+      var idx = document.changeForm.gakkikbn.value;
+      window.top.location.href = './GakkiIchiran_22_'+ idx + '.html';
+      return false;
+    }
+    function changeGakunen() {
+      var idx = document.changeForm.gakunen.value;
+      window.top.location.href = './GakunenIchiran_22_'+ idx + '.html';
+      return false;
+    }
+    function changeYobi() {
+      var idx = document.changeForm.yobi.value;
+      window.top.location.href = './YobiIchiran_22_'+ idx + '.html';
+      return false;
+    }
+    function changeJigen() {
+      var idx = document.changeForm.jigen.value;
+      window.top.location.href = './JigenIchiran_22_'+ idx + '.html';
+      return false;
+    }
+    function changeJitumu() {
+      var idx = document.changeForm.jitumuKbn.value;
+      window.top.location.href = './JitumuKbnIchiran_22_'+ idx + '.html';
+      return false;
+    }
+  //-->
+  </script>
+<style id="dark-reader-style" type="text/css">@media screen {
+
+/* Leading rule */
+html {
+  -webkit-filter: invert(100%) hue-rotate(180deg) brightness(80%) contrast(80%) !important;
+  filter: invert(100%) hue-rotate(180deg) brightness(80%) contrast(80%) !important;
+}
+
+/* Reverse rule */
+img,
+video,
+:not(object):not(body)>embed,
+object,
+svg image,
+[style*="background:url"],
+[style*="background-image:url"],
+[style*="background: url"],
+[style*="background-image: url"],
+[background],
+twitterwidget {
+  -webkit-filter: invert(100%) hue-rotate(180deg) !important;
+  filter: invert(100%) hue-rotate(180deg) !important;
+}
+[style*="background:url"] *,
+[style*="background-image:url"] *,
+[style*="background: url"] *,
+[style*="background-image: url"] *,
+input,
+[background] *,
+img[src^="https://s0.wp.com/latex.php"],
+twitterwidget .NaturalImage-image {
+  -webkit-filter: none !important;
+  filter: none !important;
+}
+.compatibility-with-darkreader-below-4-3-3 {
+  background: white !important;
+}
+
+/* Text contrast */
+html {
+  text-shadow: 0 0 0 !important;
+}
+
+/* Full screen */
+:-webkit-full-screen, :-webkit-full-screen * {
+  -webkit-filter: none !important;
+  filter: none !important;
+}
+:-moz-full-screen, :-moz-full-screen * {
+  -webkit-filter: none !important;
+  filter: none !important;
+}
+:fullscreen, :fullscreen * {
+  -webkit-filter: none !important;
+  filter: none !important;
+}
+
+/* Page background */
+html {
+  background: rgb(25,25,25) !important;
+}
+
+/* Custom rules */
+.compatibility-with-darkreader-below-4-3-3 {
+    background: white !important;
+}
+
+}</style></head>
+  <body>
+  
+    <table border="0" cellspacing="0" cellpadding="0" width="100%" class="title">
+        <tbody><tr>
+            <td height="23">
+                <img src="./2020gakubu_yakan_files/func_refer4.gif" border="0" hspace="5" align="left"><img src="./2020gakubu_yakan_files/space.gif" width="5" height="1" border="0" hspace="0" vspace="0" align="left">2019年度　シラバス　＜<a name="TOP">情報理工学部夜間主コース　先端工学基礎課程</a>＞ 
+            </td>
+        </tr>
+    </tbody></table>
+    
+  <table width="99%" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tbody><tr>
+    <td height="30">
+      <table width="96%" border="0" align="center" cellpadding="0" cellspacing="0">
+        <tbody><tr>
+        <td class="text12px">
+         学期順に表示しています。
+         
+         
+         
+         
+        </td>
+        </tr>
+      </tbody></table>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <table width="96%" border="0" align="center" cellpadding="0" cellspacing="0">
+      <tbody><tr height="20">
+        <form name="changeForm" method="post" target="_self"></form>
+        <td class="text12px" nowrap="">学期区分：
+          <select name="gakkikbn" onchange="return changeGakki()">
+              <option value="0" selected="">全件</option>
+                    <option value="1">前学期</option>
+                    <option value="2">後学期</option>
+          </select>
+        </td>
+        
+        <td class="text12px" width="70%"><br></td>
+      </tr>
+      </tbody></table>
+    </td>
+  </tr>
+  <tr>
+    <td><table width="96%" border="0" align="center" cellpadding="0" cellspacing="0">
+      <tbody><tr>
+        <td><table border="0" align="right" cellpadding="2" cellspacing="1" width="340" class="text12px">
+          <tbody>
+            <tr>
+              <th colspan="6" bgcolor="#dddddd">表示順 </th>
+            </tr>
+            <tr>
+              <td class="syllabus-button" nowrap="">
+               学期
+              </td>
+              <td class="syllabus-button" nowrap="">
+                <a href="http://kyoumu.office.uec.ac.jp/syllabus/2019/GakunenIchiran_22_0.html">学年</a>
+              </td>
+              <td class="syllabus-button" nowrap="">
+                <a href="http://kyoumu.office.uec.ac.jp/syllabus/2019/YobiIchiran_22_0.html">曜日</a>
+              </td>
+              <td class="syllabus-button" nowrap="">
+                <a href="http://kyoumu.office.uec.ac.jp/syllabus/2019/JigenIchiran_22_0.html">時限</a>
+              </td>
+              <td class="syllabus-button" nowrap="">
+                <a href="http://kyoumu.office.uec.ac.jp/syllabus/2019/JitumuKbnIchiran_22_0.html">実務経験のある教員</a>
+              </td>
+            </tr>
+          </tbody>
+        </table></td>
+      </tr>
+    </tbody></table>
+      <table width="96%" border="0" align="center" cellpadding="0" cellspacing="0">
+         <tbody><tr>
+           <td><a href="http://kyoumu.office.uec.ac.jp/syllabus/index.htm" target="_self">「年度・開講所属」選択画面へ戻る </a></td>
+         </tr>
+      </tbody></table>
+    </td>
+  </tr>
+  
+  <tr>
+    <td>
+    <table width="100%">
+      <tbody><tr>
+        </tr></tbody><thead>
+          <tr><th class="normal" width="40">No.</th>
+          <th class="normal" width="70">学期
+          </th><th class="normal" width="70">開講
+          </th><th class="normal" width="90">曜日・時限</th>
+          <th class="normal" width="120">時間割コード</th>
+          <th class="normal">科目</th>
+          <th class="normal">担当教員</th>
+        </tr></thead>
+      
+          <tbody><tr onmouseout="TRMouseOut(this)" onmouseover="TRMouseOver(this)">
+            <td align="right">1</td>
+            <td align="center">前学期</td>
+            <td align="center">前学期</td>
+            <td align="center">金6</td>
+            <td align="center">18017103</td>
+            <td align="left"><a href="http://kyoumu.office.uec.ac.jp/syllabus/2019/22/22_18017103.html">インターンシップⅡ（学部・Ｋ課程）</a></td>
+            <td align="left">山田　祥之</td>
+        </tr>
+          <tr onmouseout="TRMouseOut(this)" onmouseover="TRMouseOver(this)">
+            <td align="right">2</td>
+            <td align="center">前学期</td>
+            <td align="center">前学期</td>
+            <td align="center">他</td>
+            <td align="center">18023109</td>
+            <td align="left"><a href="http://kyoumu.office.uec.ac.jp/syllabus/2019/22/22_18023109.html">輪講Ａ（学部・Ｋ課程）</a></td>
+            <td align="left">杉　正夫</td>
+        </tr>
+          <tr onmouseout="TRMouseOut(this)" onmouseover="TRMouseOver(this)">
+            <td align="right">3</td>
+            <td align="center">前学期</td>
+            <td align="center">前学期</td>
+            <td align="center">他</td>
+            <td align="center">18023110</td>
+            <td align="left"><a href="http://kyoumu.office.uec.ac.jp/syllabus/2019/22/22_18023110.html">輪講Ｂ（学部・Ｋ課程）</a></td>
+            <td align="left">杉　正夫</td>
+        </tr>
+          <tr onmouseout="TRMouseOut(this)" onmouseover="TRMouseOver(this)">
+            <td align="right">4</td>
+            <td align="center">後学期</td>
+            <td align="center">後学期</td>
+            <td align="center">他</td>
+            <td align="center">18018205</td>
+            <td align="left"><a href="http://kyoumu.office.uec.ac.jp/syllabus/2019/22/22_18018205.html">インターンシップⅠ（学部・Ｋ課程）</a></td>
+            <td align="left">山田　祥之</td>
+        </tr>
+          <tr onmouseout="TRMouseOut(this)" onmouseover="TRMouseOver(this)">
+            <td align="right">5</td>
+            <td align="center">後学期</td>
+            <td align="center">後学期</td>
+            <td align="center">他</td>
+            <td align="center">18023209</td>
+            <td align="left"><a href="http://kyoumu.office.uec.ac.jp/syllabus/2019/22/22_18023209.html">卒業研究Ａ（学部・Ｋ課程）</a></td>
+            <td align="left">杉　正夫</td>
+        </tr>
+          <tr onmouseout="TRMouseOut(this)" onmouseover="TRMouseOver(this)">
+            <td align="right">6</td>
+            <td align="center">後学期</td>
+            <td align="center">後学期</td>
+            <td align="center">他</td>
+            <td align="center">18023210</td>
+            <td align="left"><a href="http://kyoumu.office.uec.ac.jp/syllabus/2019/22/22_18023210.html">卒業研究Ｂ（学部・Ｋ課程）</a></td>
+            <td align="left">杉　正夫</td>
+        </tr>
+      </tbody></table>
+    </td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+     <td height="30">
+     <table width="96%" border="0" align="center" cellpadding="0" cellspacing="0">
+      <tbody><tr>
+        <td><a href="http://kyoumu.office.uec.ac.jp/syllabus/index.htm" target="_self">「年度・開講所属」選択画面へ戻る </a></td>
+      </tr>
+     </tbody></table>
+     </td>
+  </tr>
+  <tr>
+    <td bgcolor="#CCCCCC"><div align="right"><img src="./2020gakubu_yakan_files/footer_copyright.gif"></div></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  </tbody></table>
+  
+</body></html>

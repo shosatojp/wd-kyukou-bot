@@ -65,3 +65,29 @@ Twitterのダイレクトメッセージを使用して、各個人が履修す�
 
 # GoogleOAuth確認
 このアプリケーションは大学の休講情報をユーザーに個別に配信し、ユーザーの大学生活のエクスペリエンスを向上させることを目的としています。この配信する機能に加えて、ユーザーのGoogleカレンダーにも表示させることで、ユーザーは日々の予定を立てやすくなります。アプリは https://www.googleapis.com/auth/calendar.events を使用してユーザーのGoogleカレンダーに大学の休講情報に関するイベントを作成し、ユーザーの便利な生活を推進します。
+
+
+# メンテナンス
+
+1. cloneしてくる
+
+```sh
+git clone https://github.com/shosatojp/wd-kyukou-bot.git
+```
+
+1. シラバス情報をsyllabus以下にダウンロードする
+
+![](README/000498.png)
+
+このページ
+
+1. コンテナを起動する
+
+1. シラバスをDBに登録する
+
+```
+sudo docker-compose exec kyukoubot bash
+cd wd-kyukou-bot/kyukou
+python3 syllabus.py
+exit
+```

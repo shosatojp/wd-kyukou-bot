@@ -8,15 +8,17 @@ env_mark = '__ENV__'
 isinpackage = not __name__ in ['settings', '__main__']
 if isinpackage:
     from .util import Just
+    from .config import config
 else:
     from util import Just
+    from config import config
 
 
 def load_settings(relative_path):
     path = os.path.join(os.path.dirname(__file__), relative_path)
     with open(path, 'rt', encoding='utf-8') as f:
         global settings
-        settings = yaml.load(f, Loader=yaml.SafeLoader)
+        settings = config
         resolve_env(settings)
         settings = Just(settings)
 

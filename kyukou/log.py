@@ -36,6 +36,10 @@ def log(__name__, message, log_level=2):
             sys.stdout.flush()
         if settings.log.slack() and log_level >= settings.log.slack.log_level_gt():
             scheduler.pool.submit(log_with_slack, now, __name__, message, log_level)
+        if not os.path.exists(log_file):
+            os.makedirs(os.path.dirname(log_file), exist_ok=True)
+            with open(log_file, 'wt') as f:
+                pass
         with open(log_file, 'at', encoding='utf-8') as f:
             f.write(msg+'\n')
 

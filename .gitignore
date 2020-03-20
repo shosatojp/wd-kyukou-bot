@@ -12,3 +12,6 @@ storage
 *.log
 *.out
 *.archive
+
+.env
+.envrc

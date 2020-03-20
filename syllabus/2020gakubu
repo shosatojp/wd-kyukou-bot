@@ -1,0 +1,934 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!-- saved from url=(0067)http://kyoumu.office.uec.ac.jp/syllabus/2019/GakkiIchiran_21_0.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <link rel="SHORTCUT ICON" href="http://kyoumu.office.uec.ac.jp/syllabus/2019/favicon.ico">
+  
+  <meta http-equiv="Cache-Control" content="no-cache">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="Thu, 01 Dec 1994 16:00:00 GMT">
+
+<title>電気通信大学　シラバスWeb公開システム</title>
+
+  <link rel="stylesheet" href="./2020gakubu_files/StyleSheet.css" type="text/css">
+  <script type="text/javascript" src="./2020gakubu_files/ScriptColor.js.ダウンロード"></script>
+  <script type="text/javascript">
+     function TRMouseOut(obj){}
+     function TRMouseOver(obj){}
+  </script>
+
+  <script language="JavaScript">
+  <!--
+    function OpenInfo(url){
+     var winname = "SyllabusInfoWindow";
+     var params = "left=0,top=0,width=800,height=800,toolbar=0,location=0,status=0,menubar=1,scrollbars=1,resizable=1";
+     var newwin = window.open(url, winname, params);
+     newwin.focus();
+     return false;
+    }
+        function changeGakki() {
+      var idx = document.changeForm.gakkikbn.value;
+      window.top.location.href = './GakkiIchiran_21_'+ idx + '.html';
+      return false;
+    }
+    function changeGakunen() {
+      var idx = document.changeForm.gakunen.value;
+      window.top.location.href = './GakunenIchiran_21_'+ idx + '.html';
+      return false;
+    }
+    function changeYobi() {
+      var idx = document.changeForm.yobi.value;
+      window.top.location.href = './YobiIchiran_21_'+ idx + '.html';
+      return false;
+    }
+    function changeJigen() {
+      var idx = document.changeForm.jigen.value;
+      window.top.location.href = './JigenIchiran_21_'+ idx + '.html';
+      return false;
+    }
+    function changeJitumu() {
+      var idx = document.changeForm.jitumuKbn.value;
+      window.top.location.href = './JitumuKbnIchiran_21_'+ idx + '.html';
+      return false;
+    }
+  //-->
+  </script>
+<style id="dark-reader-style" type="text/css">@media screen {
+
+/* Leading rule */
+html {
+  -webkit-filter: invert(100%) hue-rotate(180deg) brightness(80%) contrast(80%) !important;
+  filter: invert(100%) hue-rotate(180deg) brightness(80%) contrast(80%) !important;
+}
+
+/* Reverse rule */
+img,
+video,
+:not(object):not(body)>embed,
+object,
+svg image,
+[style*="background:url"],
+[style*="background-image:url"],
+[style*="background: url"],
+[style*="background-image: url"],
+[background],
+twitterwidget {
+  -webkit-filter: invert(100%) hue-rotate(180deg) !important;
+  filter: invert(100%) hue-rotate(180deg) !important;
+}
+[style*="background:url"] *,
+[style*="background-image:url"] *,
+[style*="background: url"] *,
+[style*="background-image: url"] *,
+input,
+[background] *,
+img[src^="https://s0.wp.com/latex.php"],
+twitterwidget .NaturalImage-image {
+  -webkit-filter: none !important;
+  filter: none !important;
+}
+.compatibility-with-darkreader-below-4-3-3 {
+  background: white !important;
+}
+
+/* Text contrast */
+html {
+  text-shadow: 0 0 0 !important;
+}
+
+/* Full screen */
+:-webkit-full-screen, :-webkit-full-screen * {
+  -webkit-filter: none !important;
+  filter: none !important;
+}
+:-moz-full-screen, :-moz-full-screen * {
+  -webkit-filter: none !important;
+  filter: none !important;
+}
+:fullscreen, :fullscreen * {
+  -webkit-filter: none !important;
+  filter: none !important;
+}
+
+/* Page background */
+html {
+  background: rgb(25,25,25) !important;
+}
+
+/* Custom rules */
+.compatibility-with-darkreader-below-4-3-3 {
+    background: white !important;
+}
+
+}</style></head>
+  <body>
+  
+    <table border="0" cellspacing="0" cellpadding="0" width="100%" class="title">
+        <tbody><tr>
+            <td height="23">
+                <img src="./2020gakubu_files/func_refer4.gif" border="0" hspace="5" align="left"><img src="./2020gakubu_files/space.gif" width="5" height="1" border="0" hspace="0" vspace="0" align="left">2019年度　シラバス　＜<a name="TOP">情報理工学部</a>＞ 
+            </td>
+        </tr>
+    </tbody></table>
+    
+  <table width="99%" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tbody><tr>
+    <td height="30">
+      <table width="96%" border="0" align="center" cellpadding="0" cellspacing="0">
+        <tbody><tr>
+        <td class="text12px">
+         学期順に表示しています。
+         
+         
+         
+         
+        </td>
+        </tr>
+      </tbody></table>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <table width="96%" border="0" align="center" cellpadding="0" cellspacing="0">
+      <tbody><tr height="20">
+        <form name="changeForm" method="post" target="_self"></form>
+        <td class="text12px" nowrap="">学期区分：
+          <select name="gakkikbn" onchange="return changeGakki()">
+              <option value="0" selected="">全件</option>
+                    <option value="1">前学期</option>
+                    <option value="2">後学期</option>
+          </select>
+        </td>
+        
+        <td class="text12px" width="70%"><br></td>
+      </tr>
+      </tbody></table>
+    </td>
+  </tr>
+  <tr>
+    <td><table width="96%" border="0" align="center" cellpadding="0" cellspacing="0">
+      <tbody><tr>
+        <td><table border="0" align="right" cellpadding="2" cellspacing="1" width="340" class="text12px">
+          <tbody>
+            <tr>
+              <th colspan="6" bgcolor="#dddddd">表示順 </th>
+            </tr>
+            <tr>
+              <td class="syllabus-button" nowrap="">
+               学期
+              </td>
+              <td class="syllabus-button" nowrap="">
+                <a href="http://kyoumu.office.uec.ac.jp/syllabus/2019/GakunenIchiran_21_0.html">学年</a>
+              </td>
+              <td class="syllabus-button" nowrap="">
+                <a href="http://kyoumu.office.uec.ac.jp/syllabus/2019/YobiIchiran_21_0.html">曜日</a>
+              </td>
+              <td class="syllabus-button" nowrap="">
+                <a href="http://kyoumu.office.uec.ac.jp/syllabus/2019/JigenIchiran_21_0.html">時限</a>
+              </td>
+              <td class="syllabus-button" nowrap="">
+                <a href="http://kyoumu.office.uec.ac.jp/syllabus/2019/JitumuKbnIchiran_21_0.html">実務経験のある教員</a>
+              </td>
+            </tr>
+          </tbody>
+        </table></td>
+      </tr>
+    </tbody></table>
+      <table width="96%" border="0" align="center" cellpadding="0" cellspacing="0">
+         <tbody><tr>
+           <td><a href="http://kyoumu.office.uec.ac.jp/syllabus/index.htm" target="_self">「年度・開講所属」選択画面へ戻る </a></td>
+         </tr>
+      </tbody></table>
+    </td>
+  </tr>
+  
+  <tr>
+    <td>
+    <table width="100%">
+      <tbody><tr>
+        </tr></tbody><thead>
+          <tr><th class="normal" width="40">No.</th>
+          <th class="normal" width="70">学期
+          </th><th class="normal" width="70">開講
+          </th><th class="normal" width="90">曜日・時限</th>
+          <th class="normal" width="120">時間割コード</th>
+          <th class="normal">科目</th>
+          <th class="normal">担当教員</th>
+        </tr></thead>
+      
+          <tbody><tr onmouseout="TRMouseOut(this)" onmouseover="TRMouseOver(this)">
+            <td align="right">1</td>
+            <td align="center">前学期</td>
+            <td align="center">前学期</td>
+            <td align="center">月3</td>
+            <td align="center">17423106</td>
+            <td align="left"><a href="http://kyoumu.office.uec.ac.jp/syllabus/2019/21/21_17423106.html">応用数学</a></td>
+            <td align="left">一色　秀夫</td>
+        </tr>
+          <tr onmouseout="TRMouseOut(this)" onmouseover="TRMouseOver(this)">
+            <td align="right">2</td>
+            <td align="center">前学期</td>
+            <td align="center">前学期</td>
+            <td align="center">月5</td>
+            <td align="center">17017109</td>
+            <td align="left"><a href="http://kyoumu.office.uec.ac.jp/syllabus/2019/21/21_17017109.html">Advanced Communication Engineering and Informatics Ⅱ（学部）</a></td>
+            <td align="left">來住　直人</td>
+        </tr>
+          <tr onmouseout="TRMouseOut(this)" onmouseover="TRMouseOver(this)">
+            <td align="right">3</td>
+            <td align="center">前学期</td>
+            <td align="center">前学期</td>
+            <td align="center">月5</td>
+            <td align="center">17025010</td>
+            <td align="left"><a href="http://kyoumu.office.uec.ac.jp/syllabus/2019/21/21_17025010.html">教職論</a></td>
+            <td align="left">佐々木　啓子</td>
+        </tr>
+          <tr onmouseout="TRMouseOut(this)" onmouseover="TRMouseOver(this)">
+            <td align="right">4</td>
+            <td align="center">前学期</td>
+            <td align="center">前学期</td>
+            <td align="center">月2, 水4</td>
+            <td align="center">17321110</td>
+            <td align="left"><a href="http://kyoumu.office.uec.ac.jp/syllabus/2019/21/21_17321110.html">電気回路および演習</a></td>
+            <td align="left">内田　雅文</td>
+        </tr>
+          <tr onmouseout="TRMouseOut(this)" onmouseover="TRMouseOver(this)">
+            <td align="right">5</td>
+            <td align="center">前学期</td>
+            <td align="center">前学期</td>
+            <td align="center">火5</td>
+            <td align="center">17025008</td>
+            <td align="left"><a href="http://kyoumu.office.uec.ac.jp/syllabus/2019/21/21_17025008.html">教育心理学</a></td>
+            <td align="left">青山　征彦</td>
+        </tr>
+          <tr onmouseout="TRMouseOut(this)" onmouseover="TRMouseOver(this)">
+            <td align="right">6</td>
+            <td align="center">前学期</td>
+            <td align="center">前学期</td>
+            <td align="center">水1</td>
+            <td align="center">17017114</td>
+            <td align="left"><a href="http://kyoumu.office.uec.ac.jp/syllabus/2019/21/21_17017114.html">Modern Optics and Photonics（学部）</a></td>
+            <td align="left">富田　康生</td>
+        </tr>
+          <tr onmouseout="TRMouseOut(this)" onmouseover="TRMouseOver(this)">
+            <td align="right">7</td>
+            <td align="center">前学期</td>
+            <td align="center">前学期</td>
+            <td align="center">水5</td>
+            <td align="center">17025002</td>
+            <td align="left"><a href="http://kyoumu.office.uec.ac.jp/syllabus/2019/21/21_17025002.html">教育課程編成論</a></td>
+            <td align="left">狩野　浩二</td>
+        </tr>
+          <tr onmouseout="TRMouseOut(this)" onmouseover="TRMouseOver(this)">
+            <td align="right">8</td>
+            <td align="center">前学期</td>
+            <td align="center">前学期</td>
+            <td align="center">水5</td>
+            <td align="center">17025009</td>
+            <td align="left"><a href="http://kyoumu.office.uec.ac.jp/syllabus/2019/21/21_17025009.html">教育相談</a></td>
+            <td align="left">○西村智子・○宇部弘子</td>
+        </tr>
+          <tr onmouseout="TRMouseOut(this)" onmouseover="TRMouseOver(this)">
+            <td align="right">9</td>
+            <td align="center">前学期</td>
+            <td align="center">前学期</td>
+            <td align="center">木3</td>
+            <td align="center">17323112</td>
+            <td align="left"><a href="http://kyoumu.office.uec.ac.jp/syllabus/2019/21/21_17323112.html">電気エネルギーシステム</a></td>
+            <td align="left">金子　修</td>
+        </tr>
+          <tr onmouseout="TRMouseOut(this)" onmouseover="TRMouseOver(this)">
+            <td align="right">10</td>
+            <td align="center">前学期</td>
+            <td align="center">前学期</td>
+            <td align="center">木4</td>
+            <td align="center">17017001</td>
+            <td align="left"><a href="http://kyoumu.office.uec.ac.jp/syllabus/2019/21/21_17017001.html">Sustainable Supply Chain Management（学部）</a></td>
+            <td align="left">山田　哲男</td>
+        </tr>
+          <tr onmouseout="TRMouseOut(this)" onmouseover="TRMouseOver(this)">
+            <td align="right">11</td>
+            <td align="center">前学期</td>
+            <td align="center">前学期</td>
+            <td align="center">木4</td>
+            <td align="center">17221104</td>
+            <td align="left"><a href="http://kyoumu.office.uec.ac.jp/syllabus/2019/21/21_17221104.html">情報・通信演習１</a></td>
+            <td align="left">小山　大介</td>
+        </tr>
+          <tr onmouseout="TRMouseOut(this)" onmouseover="TRMouseOver(this)">
+            <td align="right">12</td>
+            <td align="center">前学期</td>
+            <td align="center">前学期</td>
+            <td align="center">木5</td>
+            <td align="center">17025006</td>
+            <td align="left"><a href="http://kyoumu.office.uec.ac.jp/syllabus/2019/21/21_17025006.html">教育実習・事前事後指導(2週間実習者)</a></td>
+            <td align="left">佐々木・赤澤・武石</td>
+        </tr>
+          <tr onmouseout="TRMouseOut(this)" onmouseover="TRMouseOver(this)">
+            <td align="right">13</td>
+            <td align="center">前学期</td>
+            <td align="center">前学期</td>
+            <td align="center">木5</td>
+            <td align="center">17025023</td>
+            <td align="left"><a href="http://kyoumu.office.uec.ac.jp/syllabus/2019/21/21_17025023.html">教育実習・事前事後指導(3・4週間実習者)</a></td>
+            <td align="left">佐々木・赤澤・武石</td>
+        </tr>
+          <tr onmouseout="TRMouseOut(this)" onmouseover="TRMouseOver(this)">
+            <td align="right">14</td>
+            <td align="center">前学期</td>
+            <td align="center">前学期</td>
+            <td align="center">木5</td>
+            <td align="center">17121204</td>
+            <td align="left"><a href="http://kyoumu.office.uec.ac.jp/syllabus/2019/21/21_17121204.html">総合情報学基礎</a></td>
+            <td align="left">野嶋　琢也</td>
+        </tr>
+          <tr onmouseout="TRMouseOut(this)" onmouseover="TRMouseOver(this)">
+            <td align="right">15</td>
+            <td align="center">前学期</td>
+            <td align="center">前学期</td>
+            <td align="center">金3</td>
+            <td align="center">17017218</td>
+            <td align="left"><a href="http://kyoumu.office.uec.ac.jp/syllabus/2019/21/21_17017218.html">Photonics and opto-electronics（学部）</a></td>
+            <td align="left">上野　芳康</td>
+        </tr>
+          <tr onmouseout="TRMouseOut(this)" onmouseover="TRMouseOver(this)">
+            <td align="right">16</td>
+            <td align="center">前学期</td>
+            <td align="center">前学期</td>
+            <td align="center">金5</td>
+            <td align="center">17025001</td>
+            <td align="left"><a href="http://kyoumu.office.uec.ac.jp/syllabus/2019/21/21_17025001.html">理科教育法IB</a></td>
+            <td align="left">川角　博</td>
+        </tr>
+          <tr onmouseout="TRMouseOut(this)" onmouseover="TRMouseOver(this)">
+            <td align="right">17</td>
+            <td align="center">前学期</td>
+            <td align="center">前学期</td>
+            <td align="center">金5</td>
+            <td align="center">17025007</td>
+            <td align="left"><a href="http://kyoumu.office.uec.ac.jp/syllabus/2019/21/21_17025007.html">数学科教育法I</a></td>
+            <td align="left">矢嶋　昭雄</td>
+        </tr>
+          <tr onmouseout="TRMouseOut(this)" onmouseover="TRMouseOver(this)">
+            <td align="right">18</td>
+            <td align="center">前学期</td>
+            <td align="center">前学期</td>
+            <td align="center">他</td>
+            <td align="center">17017151</td>
+            <td align="left"><a href="http://kyoumu.office.uec.ac.jp/syllabus/2019/21/21_17017151.html">学部特別講義B（’１９標準化）</a></td>
+            <td align="left">阿部　浩二</td>
+        </tr>
+          <tr onmouseout="TRMouseOut(this)" onmouseover="TRMouseOver(this)">
+            <td align="right">19</td>
+            <td align="center">前学期</td>
+            <td align="center">前学期</td>
+            <td align="center">他</td>
+            <td align="center">17017301</td>
+            <td align="left"><a href="http://kyoumu.office.uec.ac.jp/syllabus/2019/21/21_17017301.html">海外語学研修Ⅰ（学部・夏）（集中）</a></td>
+            <td align="left">佐々木　直子</td>
+        </tr>
+          <tr onmouseout="TRMouseOut(this)" onmouseover="TRMouseOver(this)">
+            <td align="right">20</td>
+            <td align="center">前学期</td>
+            <td align="center">前学期</td>
+            <td align="center">他</td>
+            <td align="center">17017302</td>
+            <td align="left"><a href="http://kyoumu.office.uec.ac.jp/syllabus/2019/21/21_17017302.html">海外語学研修Ⅱ（学部・夏）（集中）</a></td>
+            <td align="left">佐々木　直子</td>
+        </tr>
+          <tr onmouseout="TRMouseOut(this)" onmouseover="TRMouseOver(this)">
+            <td align="right">21</td>
+            <td align="center">前学期</td>
+            <td align="center">前学期</td>
+            <td align="center">他</td>
+            <td align="center">17018327</td>
+            <td align="left"><a href="http://kyoumu.office.uec.ac.jp/syllabus/2019/21/21_17018327.html">インターンシップ（Ｊ）</a></td>
+            <td align="left">西（康）・水野</td>
+        </tr>
+          <tr onmouseout="TRMouseOut(this)" onmouseover="TRMouseOver(this)">
+            <td align="right">22</td>
+            <td align="center">前学期</td>
+            <td align="center">前学期</td>
+            <td align="center">他</td>
+            <td align="center">17018328</td>
+            <td align="left"><a href="http://kyoumu.office.uec.ac.jp/syllabus/2019/21/21_17018328.html">インターンシップ（海外）（Ｊ）</a></td>
+            <td align="left">西（康）・水野</td>
+        </tr>
+          <tr onmouseout="TRMouseOut(this)" onmouseover="TRMouseOver(this)">
+            <td align="right">23</td>
+            <td align="center">前学期</td>
+            <td align="center">前学期</td>
+            <td align="center">他</td>
+            <td align="center">17018329</td>
+            <td align="left"><a href="http://kyoumu.office.uec.ac.jp/syllabus/2019/21/21_17018329.html">インターンシップ（Ｉ）</a></td>
+            <td align="left">木寺・三輪</td>
+        </tr>
+          <tr onmouseout="TRMouseOut(this)" onmouseover="TRMouseOver(this)">
+            <td align="right">24</td>
+            <td align="center">前学期</td>
+            <td align="center">前学期</td>
+            <td align="center">他</td>
+            <td align="center">17018330</td>
+            <td align="left"><a href="http://kyoumu.office.uec.ac.jp/syllabus/2019/21/21_17018330.html">インターンシップ（海外）（Ｉ）</a></td>
+            <td align="left">木寺・三輪</td>
+        </tr>
+          <tr onmouseout="TRMouseOut(this)" onmouseover="TRMouseOver(this)">
+            <td align="right">25</td>
+            <td align="center">前学期</td>
+            <td align="center">前学期</td>
+            <td align="center">他</td>
+            <td align="center">17018331</td>
+            <td align="left"><a href="http://kyoumu.office.uec.ac.jp/syllabus/2019/21/21_17018331.html">インターンシップ（Ｍ）</a></td>
+            <td align="left">Hans-Georg Matuttis・舩戸　徹郎</td>
+        </tr>
+          <tr onmouseout="TRMouseOut(this)" onmouseover="TRMouseOver(this)">
+            <td align="right">26</td>
+            <td align="center">前学期</td>
+            <td align="center">前学期</td>
+            <td align="center">他</td>
+            <td align="center">17018332</td>
+            <td align="left"><a href="http://kyoumu.office.uec.ac.jp/syllabus/2019/21/21_17018332.html">インターンシップ（海外）（Ｍ）</a></td>
+            <td align="left">Hans-Georg Matuttis・舩戸　徹郎</td>
+        </tr>
+          <tr onmouseout="TRMouseOut(this)" onmouseover="TRMouseOver(this)">
+            <td align="right">27</td>
+            <td align="center">前学期</td>
+            <td align="center">前学期</td>
+            <td align="center">他</td>
+            <td align="center">17018333</td>
+            <td align="left"><a href="http://kyoumu.office.uec.ac.jp/syllabus/2019/21/21_17018333.html">インターンシップ（Ｓ）</a></td>
+            <td align="left">瀧　真清・渡邉　恵理子</td>
+        </tr>
+          <tr onmouseout="TRMouseOut(this)" onmouseover="TRMouseOver(this)">
+            <td align="right">28</td>
+            <td align="center">前学期</td>
+            <td align="center">前学期</td>
+            <td align="center">他</td>
+            <td align="center">17018334</td>
+            <td align="left"><a href="http://kyoumu.office.uec.ac.jp/syllabus/2019/21/21_17018334.html">インターンシップ（海外）（Ｓ）</a></td>
+            <td align="left">瀧　真清・渡邉　恵理子</td>
+        </tr>
+          <tr onmouseout="TRMouseOut(this)" onmouseover="TRMouseOver(this)">
+            <td align="right">29</td>
+            <td align="center">前学期</td>
+            <td align="center">前学期</td>
+            <td align="center">他</td>
+            <td align="center">17025011</td>
+            <td align="left"><a href="http://kyoumu.office.uec.ac.jp/syllabus/2019/21/21_17025011.html">数学科教育法IB（集中）</a></td>
+            <td align="left">田村　篤史</td>
+        </tr>
+          <tr onmouseout="TRMouseOut(this)" onmouseover="TRMouseOver(this)">
+            <td align="right">30</td>
+            <td align="center">前学期</td>
+            <td align="center">前学期</td>
+            <td align="center">他</td>
+            <td align="center">17025013</td>
+            <td align="left"><a href="http://kyoumu.office.uec.ac.jp/syllabus/2019/21/21_17025013.html">特別活動（集中）</a></td>
+            <td align="left">西野　真由美</td>
+        </tr>
+          <tr onmouseout="TRMouseOut(this)" onmouseover="TRMouseOver(this)">
+            <td align="right">31</td>
+            <td align="center">前学期</td>
+            <td align="center">前学期</td>
+            <td align="center">他</td>
+            <td align="center">17025014</td>
+            <td align="left"><a href="http://kyoumu.office.uec.ac.jp/syllabus/2019/21/21_17025014.html">教育実習（集中）・事前事後指導(2週間実習者)</a></td>
+            <td align="left">佐々木・赤澤・武石</td>
+        </tr>
+          <tr onmouseout="TRMouseOut(this)" onmouseover="TRMouseOver(this)">
+            <td align="right">32</td>
+            <td align="center">前学期</td>
+            <td align="center">前学期</td>
+            <td align="center">他</td>
+            <td align="center">17025017</td>
+            <td align="left"><a href="http://kyoumu.office.uec.ac.jp/syllabus/2019/21/21_17025017.html">理科教育法I（集中）</a></td>
+            <td align="left">平田　昭雄</td>
+        </tr>
+          <tr onmouseout="TRMouseOut(this)" onmouseover="TRMouseOver(this)">
+            <td align="right">33</td>
+            <td align="center">前学期</td>
+            <td align="center">前学期</td>
+            <td align="center">他</td>
+            <td align="center">17025021</td>
+            <td align="left"><a href="http://kyoumu.office.uec.ac.jp/syllabus/2019/21/21_17025021.html">情報科教育法I（集中）</a></td>
+            <td align="left">小原　格</td>
+        </tr>
+          <tr onmouseout="TRMouseOut(this)" onmouseover="TRMouseOver(this)">
+            <td align="right">34</td>
+            <td align="center">前学期</td>
+            <td align="center">前学期</td>
+            <td align="center">他</td>
+            <td align="center">17025024</td>
+            <td align="left"><a href="http://kyoumu.office.uec.ac.jp/syllabus/2019/21/21_17025024.html">教育実習（集中）・事前事後指導(3・4週間実習者)</a></td>
+            <td align="left">佐々木・赤澤・武石</td>
+        </tr>
+          <tr onmouseout="TRMouseOut(this)" onmouseover="TRMouseOver(this)">
+            <td align="right">35</td>
+            <td align="center">前学期</td>
+            <td align="center">前学期</td>
+            <td align="center">他</td>
+            <td align="center">17025025</td>
+            <td align="left"><a href="http://kyoumu.office.uec.ac.jp/syllabus/2019/21/21_17025025.html">理科教育法Ⅲ（集中）</a></td>
+            <td align="left">島崎　朝彦</td>
+        </tr>
+          <tr onmouseout="TRMouseOut(this)" onmouseover="TRMouseOver(this)">
+            <td align="right">36</td>
+            <td align="center">前学期</td>
+            <td align="center">前学期</td>
+            <td align="center">他</td>
+            <td align="center">17025028</td>
+            <td align="left"><a href="http://kyoumu.office.uec.ac.jp/syllabus/2019/21/21_17025028.html">教育課程編成論B（集中）</a></td>
+            <td align="left">澤田　稔</td>
+        </tr>
+          <tr onmouseout="TRMouseOut(this)" onmouseover="TRMouseOver(this)">
+            <td align="right">37</td>
+            <td align="center">前学期</td>
+            <td align="center">前学期</td>
+            <td align="center">他</td>
+            <td align="center">17123102</td>
+            <td align="left"><a href="http://kyoumu.office.uec.ac.jp/syllabus/2019/21/21_17123102.html">輪講（Ｊ）</a></td>
+            <td align="left">末廣　尚士</td>
+        </tr>
+          <tr onmouseout="TRMouseOut(this)" onmouseover="TRMouseOver(this)">
+            <td align="right">38</td>
+            <td align="center">前学期</td>
+            <td align="center">前学期</td>
+            <td align="center">他</td>
+            <td align="center">17221203</td>
+            <td align="left"><a href="http://kyoumu.office.uec.ac.jp/syllabus/2019/21/21_17221203.html">情報・通信演習２</a></td>
+            <td align="left">石川　亮</td>
+        </tr>
+          <tr onmouseout="TRMouseOut(this)" onmouseover="TRMouseOver(this)">
+            <td align="right">39</td>
+            <td align="center">前学期</td>
+            <td align="center">前学期</td>
+            <td align="center">他</td>
+            <td align="center">17223105</td>
+            <td align="left"><a href="http://kyoumu.office.uec.ac.jp/syllabus/2019/21/21_17223105.html">輪講（I）</a></td>
+            <td align="left">範　公可</td>
+        </tr>
+          <tr onmouseout="TRMouseOut(this)" onmouseover="TRMouseOver(this)">
+            <td align="right">40</td>
+            <td align="center">前学期</td>
+            <td align="center">前学期</td>
+            <td align="center">他</td>
+            <td align="center">17321102</td>
+            <td align="left"><a href="http://kyoumu.office.uec.ac.jp/syllabus/2019/21/21_17321102.html">メカトロニクス</a></td>
+            <td align="left">横井・菅</td>
+        </tr>
+          <tr onmouseout="TRMouseOut(this)" onmouseover="TRMouseOver(this)">
+            <td align="right">41</td>
+            <td align="center">前学期</td>
+            <td align="center">前学期</td>
+            <td align="center">他</td>
+            <td align="center">17323103</td>
+            <td align="left"><a href="http://kyoumu.office.uec.ac.jp/syllabus/2019/21/21_17323103.html">輪講（Ｍ）</a></td>
+            <td align="left">明　愛国</td>
+        </tr>
+          <tr onmouseout="TRMouseOut(this)" onmouseover="TRMouseOver(this)">
+            <td align="right">42</td>
+            <td align="center">前学期</td>
+            <td align="center">前学期</td>
+            <td align="center">他</td>
+            <td align="center">17423105</td>
+            <td align="left"><a href="http://kyoumu.office.uec.ac.jp/syllabus/2019/21/21_17423105.html">輪講（Ｓ）</a></td>
+            <td align="left">斎藤　弘樹</td>
+        </tr>
+          <tr onmouseout="TRMouseOut(this)" onmouseover="TRMouseOver(this)">
+            <td align="right">43</td>
+            <td align="center">前学期</td>
+            <td align="center">通年</td>
+            <td align="center">木5, 他</td>
+            <td align="center">17025030</td>
+            <td align="left"><a href="http://kyoumu.office.uec.ac.jp/syllabus/2019/21/21_17025030.html">教職実践演習（Ａ１・Ｂ１・Ｃ）</a></td>
+            <td align="left">佐々木・中山・赤澤・武石・伊東・○鈴木（隆）・○井上</td>
+        </tr>
+          <tr onmouseout="TRMouseOut(this)" onmouseover="TRMouseOver(this)">
+            <td align="right">44</td>
+            <td align="center">前学期</td>
+            <td align="center">通年</td>
+            <td align="center">木5, 他</td>
+            <td align="center">17025034</td>
+            <td align="left"><a href="http://kyoumu.office.uec.ac.jp/syllabus/2019/21/21_17025034.html">教職実践演習（Ａ２・Ｂ１・Ｃ）</a></td>
+            <td align="left">佐々木・中山・赤澤・武石・伊東・○鈴木（隆）・○井上</td>
+        </tr>
+          <tr onmouseout="TRMouseOut(this)" onmouseover="TRMouseOver(this)">
+            <td align="right">45</td>
+            <td align="center">前学期</td>
+            <td align="center">通年</td>
+            <td align="center">木5, 他</td>
+            <td align="center">17025035</td>
+            <td align="left"><a href="http://kyoumu.office.uec.ac.jp/syllabus/2019/21/21_17025035.html">教職実践演習（Ａ１・Ｂ２・Ｃ）</a></td>
+            <td align="left">佐々木・中山・赤澤・武石・伊東・○鈴木（隆）・○井上</td>
+        </tr>
+          <tr onmouseout="TRMouseOut(this)" onmouseover="TRMouseOver(this)">
+            <td align="right">46</td>
+            <td align="center">前学期</td>
+            <td align="center">通年</td>
+            <td align="center">木5, 他</td>
+            <td align="center">17025036</td>
+            <td align="left"><a href="http://kyoumu.office.uec.ac.jp/syllabus/2019/21/21_17025036.html">教職実践演習（Ａ２・Ｂ２・Ｃ）</a></td>
+            <td align="left">佐々木・中山・赤澤・武石・伊東・○鈴木（隆）・○井上</td>
+        </tr>
+          <tr onmouseout="TRMouseOut(this)" onmouseover="TRMouseOver(this)">
+            <td align="right">47</td>
+            <td align="center">前学期</td>
+            <td align="center">通年</td>
+            <td align="center">他</td>
+            <td align="center">17017303</td>
+            <td align="left"><a href="http://kyoumu.office.uec.ac.jp/syllabus/2019/21/21_17017303.html">サマートレーニング（学部）（集中）</a></td>
+            <td align="left">青山　尚之</td>
+        </tr>
+          <tr onmouseout="TRMouseOut(this)" onmouseover="TRMouseOver(this)">
+            <td align="right">48</td>
+            <td align="center">前学期</td>
+            <td align="center">通年</td>
+            <td align="center">他</td>
+            <td align="center">17223301</td>
+            <td align="left"><a href="http://kyoumu.office.uec.ac.jp/syllabus/2019/21/21_17223301.html">電子工学工房（学部）</a></td>
+            <td align="left">高橋（弘）・野村・石川（亮）・安藤（芳）・萓野・小島・鷲沢</td>
+        </tr>
+          <tr onmouseout="TRMouseOut(this)" onmouseover="TRMouseOver(this)">
+            <td align="right">49</td>
+            <td align="center">前学期</td>
+            <td align="center">通年</td>
+            <td align="center">他</td>
+            <td align="center">17223302</td>
+            <td align="left"><a href="http://kyoumu.office.uec.ac.jp/syllabus/2019/21/21_17223302.html">宇宙通信工学（学部）</a></td>
+            <td align="left">芳原・菊池・細川・津田・小島・安藤・肖</td>
+        </tr>
+          <tr onmouseout="TRMouseOut(this)" onmouseover="TRMouseOver(this)">
+            <td align="right">50</td>
+            <td align="center">前学期</td>
+            <td align="center">通年</td>
+            <td align="center">他</td>
+            <td align="center">17223303</td>
+            <td align="left"><a href="http://kyoumu.office.uec.ac.jp/syllabus/2019/21/21_17223303.html">情報工学工房（学部）</a></td>
+            <td align="left">工藤　俊亮</td>
+        </tr>
+          <tr onmouseout="TRMouseOut(this)" onmouseover="TRMouseOver(this)">
+            <td align="right">51</td>
+            <td align="center">後学期</td>
+            <td align="center">後学期</td>
+            <td align="center">月1</td>
+            <td align="center">17323110</td>
+            <td align="left"><a href="http://kyoumu.office.uec.ac.jp/syllabus/2019/21/21_17323110.html">電子回路および演習</a></td>
+            <td align="left">内田　雅文</td>
+        </tr>
+          <tr onmouseout="TRMouseOut(this)" onmouseover="TRMouseOver(this)">
+            <td align="right">52</td>
+            <td align="center">後学期</td>
+            <td align="center">後学期</td>
+            <td align="center">月3</td>
+            <td align="center">17323210</td>
+            <td align="left"><a href="http://kyoumu.office.uec.ac.jp/syllabus/2019/21/21_17323210.html">メカトロニクス応用</a></td>
+            <td align="left">横井・杉</td>
+        </tr>
+          <tr onmouseout="TRMouseOut(this)" onmouseover="TRMouseOver(this)">
+            <td align="right">53</td>
+            <td align="center">後学期</td>
+            <td align="center">後学期</td>
+            <td align="center">月5</td>
+            <td align="center">17025019</td>
+            <td align="left"><a href="http://kyoumu.office.uec.ac.jp/syllabus/2019/21/21_17025019.html">数学科教育法III</a></td>
+            <td align="left">羽住　邦男</td>
+        </tr>
+          <tr onmouseout="TRMouseOut(this)" onmouseover="TRMouseOver(this)">
+            <td align="right">54</td>
+            <td align="center">後学期</td>
+            <td align="center">後学期</td>
+            <td align="center">月5</td>
+            <td align="center">17025026</td>
+            <td align="left"><a href="http://kyoumu.office.uec.ac.jp/syllabus/2019/21/21_17025026.html">理科教育法Ⅳ</a></td>
+            <td align="left">鈴木　勝・○浅羽　宏</td>
+        </tr>
+          <tr onmouseout="TRMouseOut(this)" onmouseover="TRMouseOver(this)">
+            <td align="right">55</td>
+            <td align="center">後学期</td>
+            <td align="center">後学期</td>
+            <td align="center">火5</td>
+            <td align="center">17025015</td>
+            <td align="left"><a href="http://kyoumu.office.uec.ac.jp/syllabus/2019/21/21_17025015.html">道徳教育の研究（学域：道徳教育論）</a></td>
+            <td align="left">西野　真由美</td>
+        </tr>
+          <tr onmouseout="TRMouseOut(this)" onmouseover="TRMouseOver(this)">
+            <td align="right">56</td>
+            <td align="center">後学期</td>
+            <td align="center">後学期</td>
+            <td align="center">水4, 水5</td>
+            <td align="center">17321205</td>
+            <td align="left"><a href="http://kyoumu.office.uec.ac.jp/syllabus/2019/21/21_17321205.html">リサイクル工学</a></td>
+            <td align="left">吉田　綾</td>
+        </tr>
+          <tr onmouseout="TRMouseOut(this)" onmouseover="TRMouseOver(this)">
+            <td align="right">57</td>
+            <td align="center">後学期</td>
+            <td align="center">後学期</td>
+            <td align="center">水5</td>
+            <td align="center">17025032</td>
+            <td align="left"><a href="http://kyoumu.office.uec.ac.jp/syllabus/2019/21/21_17025032.html">教育原理</a></td>
+            <td align="left">佐々木　啓子</td>
+        </tr>
+          <tr onmouseout="TRMouseOut(this)" onmouseover="TRMouseOver(this)">
+            <td align="right">58</td>
+            <td align="center">後学期</td>
+            <td align="center">後学期</td>
+            <td align="center">木2</td>
+            <td align="center">17017112</td>
+            <td align="left"><a href="http://kyoumu.office.uec.ac.jp/syllabus/2019/21/21_17017112.html">Advanced Communication Engineering and Informatics Ⅲ（学部）</a></td>
+            <td align="left">垂井　淳</td>
+        </tr>
+          <tr onmouseout="TRMouseOut(this)" onmouseover="TRMouseOver(this)">
+            <td align="right">59</td>
+            <td align="center">後学期</td>
+            <td align="center">後学期</td>
+            <td align="center">木3</td>
+            <td align="center">17017113</td>
+            <td align="left"><a href="http://kyoumu.office.uec.ac.jp/syllabus/2019/21/21_17017113.html">Advanced Communication Engineering and Informatics Ⅳ（学部）</a></td>
+            <td align="left">小林　聡</td>
+        </tr>
+          <tr onmouseout="TRMouseOut(this)" onmouseover="TRMouseOver(this)">
+            <td align="right">60</td>
+            <td align="center">後学期</td>
+            <td align="center">後学期</td>
+            <td align="center">木3</td>
+            <td align="center">17221205</td>
+            <td align="left"><a href="http://kyoumu.office.uec.ac.jp/syllabus/2019/21/21_17221205.html">プログラミング演習</a></td>
+            <td align="left">西野　順二</td>
+        </tr>
+          <tr onmouseout="TRMouseOut(this)" onmouseover="TRMouseOver(this)">
+            <td align="right">61</td>
+            <td align="center">後学期</td>
+            <td align="center">後学期</td>
+            <td align="center">木3, 木4</td>
+            <td align="center">17017201</td>
+            <td align="left"><a href="http://kyoumu.office.uec.ac.jp/syllabus/2019/21/21_17017201.html">Experimental Electronics Laboratory（学部）</a></td>
+            <td align="left">岸本・Vohra</td>
+        </tr>
+          <tr onmouseout="TRMouseOut(this)" onmouseover="TRMouseOver(this)">
+            <td align="right">62</td>
+            <td align="center">後学期</td>
+            <td align="center">後学期</td>
+            <td align="center">木5</td>
+            <td align="center">17017211</td>
+            <td align="left"><a href="http://kyoumu.office.uec.ac.jp/syllabus/2019/21/21_17017211.html">Topics in Mechanical and Intelligent Systems Engineering Ⅱ（The human brain as intelligent machines）（学部）</a></td>
+            <td align="left">宮脇　陽一</td>
+        </tr>
+          <tr onmouseout="TRMouseOut(this)" onmouseover="TRMouseOver(this)">
+            <td align="right">63</td>
+            <td align="center">後学期</td>
+            <td align="center">後学期</td>
+            <td align="center">木5</td>
+            <td align="center">17321204</td>
+            <td align="left"><a href="http://kyoumu.office.uec.ac.jp/syllabus/2019/21/21_17321204.html">知能機械工学基礎</a></td>
+            <td align="left">内田　雅文</td>
+        </tr>
+          <tr onmouseout="TRMouseOut(this)" onmouseover="TRMouseOver(this)">
+            <td align="right">64</td>
+            <td align="center">後学期</td>
+            <td align="center">後学期</td>
+            <td align="center">金4</td>
+            <td align="center">17123207</td>
+            <td align="left"><a href="http://kyoumu.office.uec.ac.jp/syllabus/2019/21/21_17123207.html">心理情報学</a></td>
+            <td align="left">水戸　和幸</td>
+        </tr>
+          <tr onmouseout="TRMouseOut(this)" onmouseover="TRMouseOver(this)">
+            <td align="right">65</td>
+            <td align="center">後学期</td>
+            <td align="center">後学期</td>
+            <td align="center">金5</td>
+            <td align="center">17025012</td>
+            <td align="left"><a href="http://kyoumu.office.uec.ac.jp/syllabus/2019/21/21_17025012.html">数学科教育法II</a></td>
+            <td align="left">羽住　邦男</td>
+        </tr>
+          <tr onmouseout="TRMouseOut(this)" onmouseover="TRMouseOver(this)">
+            <td align="right">66</td>
+            <td align="center">後学期</td>
+            <td align="center">後学期</td>
+            <td align="center">金5</td>
+            <td align="center">17421204</td>
+            <td align="left"><a href="http://kyoumu.office.uec.ac.jp/syllabus/2019/21/21_17421204.html">先進理工学基礎</a></td>
+            <td align="left">渡邊　昌良・小野　洋</td>
+        </tr>
+          <tr onmouseout="TRMouseOut(this)" onmouseover="TRMouseOver(this)">
+            <td align="right">67</td>
+            <td align="center">後学期</td>
+            <td align="center">後学期</td>
+            <td align="center">他</td>
+            <td align="center">17017304</td>
+            <td align="left"><a href="http://kyoumu.office.uec.ac.jp/syllabus/2019/21/21_17017304.html">海外語学研修Ⅰ（学部・冬）（集中）</a></td>
+            <td align="left">佐々木　直子</td>
+        </tr>
+          <tr onmouseout="TRMouseOut(this)" onmouseover="TRMouseOver(this)">
+            <td align="right">68</td>
+            <td align="center">後学期</td>
+            <td align="center">後学期</td>
+            <td align="center">他</td>
+            <td align="center">17017305</td>
+            <td align="left"><a href="http://kyoumu.office.uec.ac.jp/syllabus/2019/21/21_17017305.html">海外語学研修Ⅱ（学部・冬）（集中）</a></td>
+            <td align="left">佐々木　直子</td>
+        </tr>
+          <tr onmouseout="TRMouseOut(this)" onmouseover="TRMouseOver(this)">
+            <td align="right">69</td>
+            <td align="center">後学期</td>
+            <td align="center">後学期</td>
+            <td align="center">他</td>
+            <td align="center">17025003</td>
+            <td align="left"><a href="http://kyoumu.office.uec.ac.jp/syllabus/2019/21/21_17025003.html">教育原理B（集中）</a></td>
+            <td align="left">井口　博充</td>
+        </tr>
+          <tr onmouseout="TRMouseOut(this)" onmouseover="TRMouseOver(this)">
+            <td align="right">70</td>
+            <td align="center">後学期</td>
+            <td align="center">後学期</td>
+            <td align="center">他</td>
+            <td align="center">17025004</td>
+            <td align="left"><a href="http://kyoumu.office.uec.ac.jp/syllabus/2019/21/21_17025004.html">教育工学（学域：教育方法・技術論）（集中）</a></td>
+            <td align="left">福本　徹</td>
+        </tr>
+          <tr onmouseout="TRMouseOut(this)" onmouseover="TRMouseOver(this)">
+            <td align="right">71</td>
+            <td align="center">後学期</td>
+            <td align="center">後学期</td>
+            <td align="center">他</td>
+            <td align="center">17025018</td>
+            <td align="left"><a href="http://kyoumu.office.uec.ac.jp/syllabus/2019/21/21_17025018.html">理科教育法II（集中）</a></td>
+            <td align="left">平田　昭雄</td>
+        </tr>
+          <tr onmouseout="TRMouseOut(this)" onmouseover="TRMouseOver(this)">
+            <td align="right">72</td>
+            <td align="center">後学期</td>
+            <td align="center">後学期</td>
+            <td align="center">他</td>
+            <td align="center">17025020</td>
+            <td align="left"><a href="http://kyoumu.office.uec.ac.jp/syllabus/2019/21/21_17025020.html">数学科教育法IV（集中）</a></td>
+            <td align="left">牧下　英世</td>
+        </tr>
+          <tr onmouseout="TRMouseOut(this)" onmouseover="TRMouseOver(this)">
+            <td align="right">73</td>
+            <td align="center">後学期</td>
+            <td align="center">後学期</td>
+            <td align="center">他</td>
+            <td align="center">17025027</td>
+            <td align="left"><a href="http://kyoumu.office.uec.ac.jp/syllabus/2019/21/21_17025027.html">教育心理学（集中）</a></td>
+            <td align="left">青山　征彦</td>
+        </tr>
+          <tr onmouseout="TRMouseOut(this)" onmouseover="TRMouseOver(this)">
+            <td align="right">74</td>
+            <td align="center">後学期</td>
+            <td align="center">後学期</td>
+            <td align="center">他</td>
+            <td align="center">17123204</td>
+            <td align="left"><a href="http://kyoumu.office.uec.ac.jp/syllabus/2019/21/21_17123204.html">卒業研究（Ｊ）</a></td>
+            <td align="left">末廣　尚士</td>
+        </tr>
+          <tr onmouseout="TRMouseOut(this)" onmouseover="TRMouseOver(this)">
+            <td align="right">75</td>
+            <td align="center">後学期</td>
+            <td align="center">後学期</td>
+            <td align="center">他</td>
+            <td align="center">17223209</td>
+            <td align="left"><a href="http://kyoumu.office.uec.ac.jp/syllabus/2019/21/21_17223209.html">卒業研究（Ｉ）</a></td>
+            <td align="left">南　泰浩</td>
+        </tr>
+          <tr onmouseout="TRMouseOut(this)" onmouseover="TRMouseOver(this)">
+            <td align="right">76</td>
+            <td align="center">後学期</td>
+            <td align="center">後学期</td>
+            <td align="center">他</td>
+            <td align="center">17323203</td>
+            <td align="left"><a href="http://kyoumu.office.uec.ac.jp/syllabus/2019/21/21_17323203.html">卒業研究（Ｍ）</a></td>
+            <td align="left">明　愛国</td>
+        </tr>
+          <tr onmouseout="TRMouseOut(this)" onmouseover="TRMouseOver(this)">
+            <td align="right">77</td>
+            <td align="center">後学期</td>
+            <td align="center">後学期</td>
+            <td align="center">他</td>
+            <td align="center">17423205</td>
+            <td align="left"><a href="http://kyoumu.office.uec.ac.jp/syllabus/2019/21/21_17423205.html">卒業研究（Ｓ）</a></td>
+            <td align="left">斎藤　弘樹</td>
+        </tr>
+      </tbody></table>
+    </td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+     <td height="30">
+     <table width="96%" border="0" align="center" cellpadding="0" cellspacing="0">
+      <tbody><tr>
+        <td><a href="http://kyoumu.office.uec.ac.jp/syllabus/index.htm" target="_self">「年度・開講所属」選択画面へ戻る </a></td>
+      </tr>
+     </tbody></table>
+     </td>
+  </tr>
+  <tr>
+    <td bgcolor="#CCCCCC"><div align="right"><img src="./2020gakubu_files/footer_copyright.gif"></div></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  </tbody></table>
+  
+</body></html>

@@ -1,5 +1,5 @@
 url_prefix: https://kyukou.monoid.app
-mongo_url: 'mongodb://localhost:8070/'
+mongo_url: 'mongodb://mongo:27017/'
 #mongod:
 #  username: kyukou
 #  __ENV__password: KYUKOU_MONGOD_PASSWORD

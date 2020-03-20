@@ -26,7 +26,7 @@ def parse_when(src):
 
 def scrape_syllabus(html):
     doc = BeautifulSoup(html, 'html.parser')
-    table = doc.select_one('table.normal')
+    table = doc.select('table')[8]
     url_src_re = re.compile(r"refer\('(\d+)','(\d+)','(\d+)'\);")
     result = []
     for tr in table.select('tr')[1:]:
