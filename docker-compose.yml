@@ -16,6 +16,6 @@ services:
     env_file:
       - .envrc
     ports:
-      - $PORT:8080
+      - $PORT:5426
     volumes:
       - ./:/wd-kyukou-bot

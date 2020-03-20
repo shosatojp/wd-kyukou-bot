@@ -1,6 +1,8 @@
+import os
+
 config = {
     "url_prefix": "https://kyukou.monoid.app",
-    "mongo_url": "mongodb://mongo:27017/",
+    "mongo_url": os.environ.get("KYUKOU_MONGO_URI", "mongodb://localhost:27017/"),
     "port": 5426,
     "line": {
         "__ENV__access_token": "KYUKOU_LINE_ACCESS_TOKEN",

@@ -20,11 +20,14 @@ import time
 def execute(environ, start_response):
     try:
         status, headers, ret = Router.do(environ)
-        log(__name__, f'{environ["HTTP_X_REAL_IP"].ljust(15)}  |  {status.ljust(15)}  [{environ["REQUEST_METHOD"].ljust(5)}] {environ["PATH_INFO"]}  ({environ["SERVER_PROTOCOL"]}) {environ["HTTP_X_REQUEST_ID"]}')
+        ip = environ["HTTP_X_REAL_IP"] if ("HTTP_X_REAL_IP" in environ) else environ["REMOTE_ADDR"]
+        req_id = environ["HTTP_X_REQUEST_ID"] if "HTTP_X_REQUEST_ID" in environ else ""
+        log(__name__, f'{ip.ljust(15)}  |  {status.ljust(15)}  [{environ["REQUEST_METHOD"].ljust(5)}] {environ["PATH_INFO"]}  ({environ["SERVER_PROTOCOL"]}) {req_id}')
         start_response(status, headers)
-        sys.stdout.flush()
         return ret
-    except:
+    except Exception as e:
+        print(e.with_traceback())
+        start_response("500 ", [])
         return []
 
 
@@ -47,11 +50,12 @@ class ThreadingWsgiServer(ThreadingMixIn, WSGIServer):
 def run_server():
     port = settings["port"]
     try:
-        subprocess.check_call(['bash', '-c', f'kill -9 `lsof -t -i:{port}`'], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+        pass
+        # subprocess.check_call(['bash', '-c', f'kill -9 `lsof -t -i:{port}`'], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
     except:
         pass
     finally:
         time.sleep(1)
-    with make_server('localhost', port, app, ThreadingWsgiServer, handler_class=NoLoggingWSGIRequestHandler) as httpd:
+    with make_server('0.0.0.0', port, app, WSGIServer, handler_class=NoLoggingWSGIRequestHandler) as httpd:
         log(__name__, f'Listen on port: {port}')
         httpd.serve_forever()
